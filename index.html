@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockup PT. Doxa Manggalya Utama</title>
+  <!-- Menggunakan Tailwind CSS via CDN untuk kemudahan testing -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Modern: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#F8F9FC] text-[#1F162E] antialiased overflow-x-hidden">
+
+  <!-- 1. FLOATING NAVBAR (TREND: GLASSMORPHISM) -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100/50 px-6 lg:px-16 py-4 flex justify-between items-center transition-all">
+    <div class="flex items-center space-x-3">
+      <!-- Penempatan Logo doxa.jpg -->
+      <img src="doxa.jpg" alt="PT Doxa Manggalya Utama" class="h-9 lg:h-11 object-contain">
+    </div>
+    
+    <!-- Menu Navigasi Tengah -->
+    <div class="hidden md:flex space-x-8 font-semibold text-[#3B1E6D]/90 text-sm tracking-wide">
+      <a href="#" class="text-[#F15A24] border-b-2 border-[#F15A24] pb-1">Beranda</a>
+      <a href="#" class="hover:text-[#F15A24] transition-all duration-300 pb-1">Tentang Kami</a>
+      <a href="#" class="hover:text-[#F15A24] transition-all duration-300 pb-1">Layanan</a>
+      <a href="#" class="hover:text-[#F15A24] transition-all duration-300 pb-1">Portofolio</a>
+    </div>
+    
+    <!-- Tombol CTA Utama (Warna Aksen Oranye dari doxa.jpg) -->
+    <div>
+      <button class="bg-[#F15A24] hover:bg-[#d94e1f] text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-lg shadow-orange-500/20 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
+        Hubungi Kami
+      </button>
+    </div>
+  </nav>
+
+  <!-- 2. HERO SECTION (TREND: AMBIENT GLOW & BOLD TYPOGRAPHY) -->
+  <section class="relative bg-gradient-to-b from-white to-[#F1F0F7] py-20 lg:py-32 px-6 lg:px-16 overflow-hidden">
+    <!-- Dekorasi Blur Halus di Latar Belakang (Mesh Gradient) -->
+    <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#3B1E6D]/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-[#F15A24]/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <!-- Badge Tren Terkini -->
+      <span class="inline-flex items-center gap-1.5 bg-purple-50 border border-purple-200/60 text-[#3B1E6D] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+        <span class="w-2 h-2 rounded-full bg-[#F15A24] animate-pulse"></span> Elevating Excellence
+      </span>
+      
+      <!-- Judul Utama dengan Kontras Warna Logo -->
+      <h1 class="text-4xl md:text-6xl font-extrabold text-[#3B1E6D] tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+        Solusi Strategis Bersama <br class="hidden md:inline">
+        <span class="bg-gradient-to-r from-[#3B1E6D] to-[#552e9c] bg-clip-text text-transparent">PT. Doxa</span> 
+        <span class="text-[#F15A24]">Manggalya Utama</span>
+      </h1>
+      
+      <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Menghadirkan layanan profesional terintegrasi dengan komitmen tinggi, efisiensi optimal, dan inovasi berkelanjutan untuk mendukung pertumbuhan bisnis Anda.
+      </p>
+      
+      <!-- Kombinasi Dua Tombol Utama & Sekunder -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <button class="w-full sm:w-auto bg-[#3B1E6D] hover:bg-[#2c1652] text-white text-sm font-bold px-8 py-4 rounded-xl shadow-lg shadow-purple-950/20 transition-all duration-300 transform hover:-translate-y-0.5">
+          Jelajahi Solusi Kami
+        </button>
+        <button class="w-full sm:w-auto bg-white hover:bg-purple-50/50 text-[#3B1E6D] border-2 border-purple-200 text-sm font-bold px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2">
+          Company Profile 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-[#F15A24]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION (TREND: BENTO GRID LAYOUT) -->
+  <section class="py-20 px-6 lg:px-16 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <p class="text-[#F15A24] font-bold tracking-wider uppercase text-sm mb-2">Layanan Unggulan</p>
+        <h2 class="text-3xl font-extrabold text-[#3B1E6D] tracking-tight">Pilar Bisnis Utama Kami</h2>
+      </div>
+      <p class="text-gray-500 max-w-md mt-4 md:mt-0 text-sm leading-relaxed">
+        Dirancang khusus secara komprehensif untuk menjawab dinamika tantangan industri saat ini secara cepat dan akurat.
+      </p>
+    </div>
+
+    <!-- Implementasi Bento Grid dengan Sentuhan Warna Aksen -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Grid 1 (Lebih Besar - Menonjolkan Layanan Utama) -->
+      <div class="md:col-span-2 bg-white border border-purple-100/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#F15A24]/10 to-transparent rounded-bl-full pointer-events-none"></div>
+        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#3B1E6D] transition-colors duration-300">
+          <svg class="w-6 h-6 text-[#F15A24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#3B1E6D] mb-3">Manajemen & Infrastruktur Korporat</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Pengembangan tata kelola infrastruktur bisnis skala besar yang kokoh, terstruktur, serta berorientasi pada efisiensi jangka panjang.</p>
+        <a href="#" class="text-sm font-bold text-[#F15A24] inline-flex items-center gap-1 hover:gap-2 transition-all">Selengkapnya &rarr;</a>
+      </div>
+
+      <!-- Grid 2 (Ukuran Standar) -->
+      <div class="bg-white border border-purple-100/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 group">
+        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#3B1E6D] transition-colors duration-300">
+          <svg class="w-6 h-6 text-[#F15A24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#3B1E6D] mb-3">Konsultasi Strategis</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Analisis mendalam penyusunan strategi operasional bisnis guna meningkatkan kapabilitas bersaing perusahaan.</p>
+        <a href="#" class="text-sm font-bold text-[#F15A24] inline-flex items-center gap-1 hover:gap-2 transition-all">Selengkapnya &rarr;</a>
+      </div>
+
+      <!-- Grid 3 (Ukuran Standar) -->
+      <div class="bg-white border border-purple-100/70 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 group">
+        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#3B1E6D] transition-colors duration-300">
+          <svg class="w-6 h-6 text-[#F15A24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#3B1E6D] mb-3">Transformasi Digital</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Integrasi sistem cerdas mutakhir untuk otomatisasi alur kerja demi performa bisnis yang lebih gesit.</p>
+        <a href="#" class="text-sm font-bold text-[#F15A24] inline-flex items-center gap-1 hover:gap-2 transition-all">Selengkapnya &rarr;</a>
+      </div>
+
+      <!-- Grid 4 (Lebih Besar) -->
+      <div class="md:col-span-2 bg-gradient-to-br from-[#3B1E6D] to-[#251247] p-8 rounded-3xl shadow-md text-white flex flex-col justify-between relative overflow-hidden group">
+        <div class="absolute bottom-[-20%] right-[-10%] w-64 h-64 bg-[#F15A24]/20 rounded-full blur-2xl group-hover:scale-110 transition-transform duration-500"></div>
+        <div>
+          <span class="bg-[#F15A24] text-xs font-bold px-3 py-1 rounded-md tracking-wider uppercase mb-4 inline-block">Kemitraan Global</span>
+          <h3 class="text-2xl font-bold mb-3">Siap Mengakselerasi Bisnis Anda ke Tahap Berikutnya?</h3>
+          <p class="text-purple-200 text-sm leading-relaxed max-w-xl mb-6">Kami percaya bahwa kolaborasi yang kokoh dibentuk di atas fondasi integritas dan target yang selaras. Mari jadikan kami mitra andalan perjalanan ekspansi Anda.</p>
+        </div>
+        <div>
+          <button class="bg-white text-[#3B1E6D] hover:bg-[#F15A24] hover:text-white text-sm font-bold px-6 py-3 rounded-xl transition-all duration-300 shadow-sm">
+            Mulai Diskusi Bersama Tim Ahli
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
